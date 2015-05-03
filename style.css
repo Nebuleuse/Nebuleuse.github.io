@@ -6,22 +6,25 @@ body {
 	margin: 0px;
 	font-family: SourceSansRegular;
 }
-header {
-	margin-top: -0px;
-	padding: 12px 12px 2px 12px;
-	border-bottom: black solid 1px;
-	box-shadow: 0px 7px 12px 0px rgba(0,0,0,0.2);
-	background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.2) 100%);
-}
-header a {
+a {
 	color: inherit;
 	text-decoration: none;
 	font-weight: bold;
+	border-bottom: #ff9800 solid 1px;
 }
-header a:hover {
-	border-bottom: orange solid 1px;
+a:hover {
+	border-bottom: #ff9800 solid 3px;
+	color: #ff9800;
+}
+header {
+	padding: 12px 12px 2px 12px;
+	border-bottom: #9fa8da solid 1px;
+	box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.4);
+	background: linear-gradient(to bottom, #e8eaf6 0%, #c5cae9 100%);
 }
 header h1 {
+	opacity: 0.87;
+	width: 120px;
 	margin-top: 0px;
 	margin-bottom: 12px;
 }
@@ -32,6 +35,7 @@ header ul {
 	list-style-type: none;
 }
 header li {
+	opacity: 0.7;
 	display: inline;
 	margin-right: 8px;
 	font-size: 18px;
