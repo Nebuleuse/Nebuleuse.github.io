@@ -8,6 +8,9 @@ angular.module('nebuleuse', [ 'ngRoute' ])
       when('/features', {
         templateUrl: 'tpl/features.html'
       }).
+      when('/documentation', {
+        templateUrl: 'tpl/doc.html'
+      }).
       otherwise({
         redirectTo: '/overview'
       });
