@@ -16,6 +16,9 @@ a:hover {
 	border-bottom: #ff9800 solid 3px;
 	color: #ff9800;
 }
+a[alt="Source on Github"], a[alt="Source on Github"]:hover {
+	border-bottom: none!important;
+}
 header {
 	padding: 12px 12px 2px 12px;
 	border-bottom: #9fa8da solid 1px;
