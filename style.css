@@ -67,9 +67,9 @@ footer {
 	border-top: #9fa8da solid 1px;
 	border-bottom: #9fa8da solid 1px;
 	padding: 0px;
-	margin: 8px 0px 8px 0px;
+	margin: 16px 0px 12px 0px;
 	border-right: none;
-	box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.3);
 	background-color: #e8eaf6;
 }
 .OverviewLeft, .OverviewRight {
@@ -103,5 +103,6 @@ footer {
 
 .Content {
 	width: 70%;
+	max-width: 70%;
 	margin: 28px auto 0px auto;
 }

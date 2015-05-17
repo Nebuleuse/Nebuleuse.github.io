@@ -1,4 +1,4 @@
-angular.module('nebuleuse', [ 'ngRoute' ])
+angular.module('nebuleuse', [ 'ngRoute', 'btford.markdown' ])
 .config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
@@ -23,15 +23,5 @@ angular.module('nebuleuse', [ 'ngRoute' ])
       });
   }])
 .controller('docMarkdown', ['$scope', '$routeParams', function ($scope, $routeParams) {
-  switch ($routeParams.page) {
-    case "api":
-    $scope.pageTitle = "Nebuleuse API"
-    break;
-    case "internals":
-    $scope.pageTitle = "Nebuleuse internals"
-    break;
-    case "cppclient":
-    $scope.pageTitle = "C++ client"
-    break;
-  }
+  $scope.docMd = "doc/" + $routeParams.page + ".md";
 }]);
