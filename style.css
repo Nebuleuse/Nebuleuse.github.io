@@ -21,9 +21,9 @@ a[alt="Source on Github"], a[alt="Source on Github"]:hover {
 }
 header {
 	padding: 12px 12px 2px 12px;
-	border-bottom: #9fa8da solid 1px;
-	box-shadow: 0px 6px 18px 0px rgba(0,0,0,0.4);
-	background: linear-gradient(to bottom, #e8eaf6 0%, #c5cae9 100%);
+	border-bottom: 1px solid rgba(218, 174, 159, 0.77);
+	box-shadow: 0px 6px 18px 0px rgba(243, 198, 156, 0.4);
+	background: linear-gradient(to bottom, rgba(233, 250, 255, 0.6) 0%, rgba(243, 198, 156, 0.48) 100%)
 }
 header h1 {
 	opacity: 0.87;
@@ -63,21 +63,21 @@ footer {
 
 .OverviewPanel {
 	width: 100%;
-	min-height: 128px;	
-	border-top: #9fa8da solid 1px;
-	border-bottom: #9fa8da solid 1px;
+	min-height: 134px;
+	border-top: 1px solid rgba(218, 174, 159, 0.77);
+	border-bottom: 1px solid rgba(218, 174, 159, 0.77);
 	padding: 0px;
 	margin: 16px 0px 12px 0px;
 	border-right: none;
-	box-shadow: 0px 0px 8px 2px rgba(0, 0, 0, 0.3);
-	background-color: #e8eaf6;
+	box-shadow: 0px 0px 8px 2px rgba(0, 85, 89, 0.3);
+	background: linear-gradient(to bottom, rgba(233, 250, 255, 0.6) 0%, rgba(243, 198, 156, 0.2) 100%)
 }
 .OverviewLeft, .OverviewRight {
 	padding: 12px;
 	text-align: center;
 }
 .OverviewLeftImg, .OverviewRightImg {
-	height: 128px;
+	height: 134px;
 	overflow: hidden;
 }
 .OverviewPanel h2 {
