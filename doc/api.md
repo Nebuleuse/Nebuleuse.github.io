@@ -37,7 +37,7 @@ Nebuleuse has a few static values your client should be aware of, here is a list
 ## Actions
 
 ### /status
-Get server's status informations.  
+Gets server's status informations.  
 *Input: none*  
 *Output:  Maintenance, NebuleuseVersion, GameVersion, UpdaterVersion, ComplexStatsTable*  
 
@@ -52,11 +52,113 @@ Disconnect from the server and invalidate the sessionid.
 *Output: standard message*  
 
 ### /getUserInfos
-Get user informations. If userid is not provided, gets informations about the caller (session's owner), otherwise gets informations about the userid. The infomask determines what amount of information will be get.  
+Gets user informations. If userid is not provided, gets informations about the caller (session's owner), otherwise gets informations about the userid. The infomask determines what amount of information will be get.  
 *Input: sessionid, (userid), infomask*  
 *Output: Id(, Username, Rank, Avatar, Achievements, Stats)*  
   
 ### /setUserAchievements
-Updates user achievement information.  
+Updates user achievements information.  
 *Input: sessionid, data*  
+*Output: standard message*  
+
+### /setUserStats
+Updates user stats informations  
+*Input: sessionid, data*  
+*Output: standard message*  
+
+### /addComplexStats
+Adds a complex stat  
+*Input: sessionid, data*  
+*Output: standard message*  
+
+### /getMessages
+Fetches messages adressed to the user  
+*Input: sessionid*  
+*Output: message data*  
+
+### /sendMessage
+Sends a message to the specified channel  
+*Input: sessionid, channel, message*  
+*Output: standard message*  
+
+### /subscribeTo
+Subscribes to recieve messages over the specified channel  
+*Input: sessionid, channel*  
+*Output: standard message*  
+
+### /unSubscribeTo
+Unsubscribes to messages over the specified channel  
+*Input: sessionid, channel*  
+*Output: standard message*  
+
+## Admin rights required actions
+
+### /getDashboardInfos
+Gets informatinos to display on the administration dashboard  
+*Input: sessionid*  
+*Output: dashboard informations*  
+
+### /getLogs
+Gets past logs from the server  
+*Input: sessionid*  
+*Output: logs lines*  
+
+### /getUsersInfos
+Gets multiple users informations  
+*Input: sessionid, infomask, page*  
+*Output: users informations*  
+
+### /getAchievements
+Gets achievements list  
+*Input: sessionid*  
+*Output: achievements information*  
+
+### /getAchievement
+Gets achievement information  
+*Input: sessionid, achievementid*  
+*Output: achievement information*  
+
+### /setAchievement
+Updates achievement information  
+*Input: sessionid, achievementid, data*  
+*Output: standard message*  
+
+### /addAchievement
+Adds new achievement  
+*Input: sessionid, data*  
+*Output: standard message*  
+
+### /deleteAchievement
+Deletes an achievement  
+*Input: sessionid, achievementid*  
+*Output: standard message*  
+
+### /getStatTables
+Gets stat tables list  
+*Input: sessionid*  
+*Output: stat table list*  
+
+### /getStatTable
+Gets stat table informations  
+*Input: sessionid, name*  
+*Output: stat table information*  
+
+### /setStatTable
+Updates stat table informations  
+*Input: sessionid, data*  
+*Output: standard message*  
+
+### /addStatTables
+Adds new stat table  
+*Input: sessionid, data*  
+*Output: standard message*  
+
+### /deleteStatTables
+Deletes specified stat table. Completely removes the informations stored for this table from database.  
+*Input: sessionid, name*  
+*Output: standard message*  
+
+### /setUsersStatFields
+Sets users stat fields  
+*Input: sessionid, fields*  
 *Output: standard message*  
