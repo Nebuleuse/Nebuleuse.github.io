@@ -39,7 +39,7 @@ Nebuleuse has a few static values your client should be aware of, here is a list
 ### /status
 Gets server's status informations.  
 *Input: none*  
-*Output:  Maintenance, NebuleuseVersion, GameVersion, UpdaterVersion, ComplexStatsTable*  
+*Output:  {Maintenance bool, NebuleuseVersion int, GameVersion int, UpdaterVersion int, ComplexStatsTable []ComplexStatsTable}*  
 
 ### /connect
 Connect to the server and get a sessionid.  
@@ -54,27 +54,32 @@ Disconnect from the server and invalidate the sessionid.
 ### /getUserInfos
 Gets user informations. If userid is not provided, gets informations about the caller (session's owner), otherwise gets informations about the userid. The infomask determines what amount of information will be get.  
 *Input: sessionid, (userid), infomask*  
-*Output: Id(, Username, Rank, Avatar, Achievements, Stats)*  
+*Output: User*  
   
 ### /setUserAchievements
 Updates user achievements information.  
 *Input: sessionid, data*  
 *Output: standard message*  
+*Data format: []{Id int, value string}*  
 
 ### /setUserStats
 Updates user stats informations  
 *Input: sessionid, data*  
 *Output: standard message*  
+*Data format: {Stats []UserStat}*  
 
 ### /addComplexStats
 Adds a complex stat  
 *Input: sessionid, data*  
 *Output: standard message*  
+*Data format: {Stats []ComplexStat}*  
+
 
 ### /getMessages
 Fetches messages adressed to the user  
 *Input: sessionid*  
-*Output: message data*  
+*Output: {Channel string, Message {}}*  
+
 
 ### /sendMessage
 Sends a message to the specified channel  
@@ -91,12 +96,22 @@ Unsubscribes to messages over the specified channel
 *Input: sessionid, channel*  
 *Output: standard message*  
 
+### /getStatTables
+Gets stat tables list  
+*Input: sessionid*  
+*Output: []ComplexStatTableInfo*  
+
+### /getStatTable
+Gets stat table informations  
+*Input: sessionid, name*  
+*Output: ComplexStatTableInfo*  
+
 ## Admin rights required actions
 
 ### /getDashboardInfos
 Gets informatinos to display on the administration dashboard  
 *Input: sessionid*  
-*Output: dashboard informations*  
+*Output: {UserCount int, OnlineUsers int, UpdateCount int}*  
 
 ### /getLogs
 Gets past logs from the server  
@@ -106,17 +121,17 @@ Gets past logs from the server
 ### /getUsersInfos
 Gets multiple users informations  
 *Input: sessionid, infomask, page*  
-*Output: users informations*  
+*Output: []User*  
 
 ### /getAchievements
 Gets achievements list  
 *Input: sessionid*  
-*Output: achievements information*  
+*Output: []Achievement*  
 
 ### /getAchievement
 Gets achievement information  
 *Input: sessionid, achievementid*  
-*Output: achievement information*  
+*Output: Achievement*  
 
 ### /setAchievement
 Updates achievement information  
@@ -132,16 +147,6 @@ Adds new achievement
 Deletes an achievement  
 *Input: sessionid, achievementid*  
 *Output: standard message*  
-
-### /getStatTables
-Gets stat tables list  
-*Input: sessionid*  
-*Output: stat table list*  
-
-### /getStatTable
-Gets stat table informations  
-*Input: sessionid, name*  
-*Output: stat table information*  
 
 ### /setStatTable
 Updates stat table informations  
