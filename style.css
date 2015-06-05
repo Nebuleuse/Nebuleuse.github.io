@@ -88,6 +88,7 @@ footer {
 	font-size: 24px;
 	height: 200px;
 	display: table;
+	margin: 2px 26px;
 }
 .TopRight span {
 	display: table-cell;
@@ -102,7 +103,7 @@ footer {
 	height: 280px;
 	display: inline-block;
 	padding: 0px;
-	margin: 16px 16px 12px;
+	margin: 16px 20px 12px;
 	vertical-align: middle;
 	box-shadow: 0px 0px 8px 2px rgba(0, 85, 89, 0.3);
 	background: linear-gradient(to bottom, rgba(233, 250, 255, 0.6) 0%, rgba(243, 198, 156, 0.2) 100%)
