@@ -98,6 +98,10 @@ footer {
 	width: 100%;
 	text-align: center;
 }
+.OverviewContainer h1 {
+	margin-bottom: 4px;
+	margin-top: 8px;
+}
 .OverviewPanel, .OverviewInfo {
 	width: 400px;
 	height: 280px;
