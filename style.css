@@ -88,7 +88,7 @@ footer {
 	font-size: 24px;
 	height: 200px;
 	display: table;
-	margin: 2px 26px;
+	margin: 0px 26px;
 }
 .TopRight span {
 	display: table-cell;
@@ -129,7 +129,7 @@ footer {
 	left: -64px;
 }
 .OverviewInfo {
-	width: 837px;
+	width: 843px;
 }
 .OverviewInfo .OverviewContent {
 	text-align: left;
