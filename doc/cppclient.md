@@ -1,5 +1,5 @@
 # Nebuleuse Cpp Client
-This library is the official Nebuleuse C++ client. It allows developpers to integrate stats, achievements, matchmaking and more into your games. For more informations about Nebuleuse, please visit the [Nebuleuse Homepage][1].
+This library is the official Nebuleuse C++ client. It allows developers to integrate stats, achievements, matchmaking and more into your games. For more informations about Nebuleuse, please visit the [Nebuleuse Homepage][1].
 
 ## Installation & building
 - git clone https://github.com/Nebuleuse/NebuleuseClientCpp.git

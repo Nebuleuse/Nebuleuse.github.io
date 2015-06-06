@@ -1,8 +1,8 @@
 # Nebuleuse API
-Nebuleuse API is unstable and may change in future versions. The API is based off a JSON REST API meaning all responses will be formated in JSON. All communication except /status must be made using the POST method. All input sent to Nebuleuse must be filled in the request's form values and most actions will require you to specify your sessionid. Data fields must be in JSON following the format specified.
+Nebuleuse API is unstable and may change in future versions. The API is based off a JSON REST API meaning all responses will be formated in JSON. All communication except /status must be made using the POST method. All input sent to Nebuleuse must be filled in the requests' form values and most actions will require you to specify your sessionid. Data fields must be in JSON following the format specified.
 
 ## Possible return values
-For actions not returning any specific data or if an error happened, Nebuleuse will return a standard message containing a Code and Message value. Code will contain the nebuleuse error code and message will contain any response from the server or the error message. The client should always check if the server's response is a standard message before using the response.
+For actions not returning any specific data or if an error happened, Nebuleuse will return a standard message containing a Code and Message value. Code will contain the Nebuleuse error code and message will contain any response from the server or the error message. The client should always check if the server's response is a standard message before using the response.
 
 ## Static values
 Nebuleuse has a few static values your client should be aware of, here is a list of such values.
@@ -74,7 +74,7 @@ Adds a complex stat
 
 
 ### /getMessages
-Fetches messages adressed to the user  
+Fetches messages addressed to the user  
 *Input: sessionid*  
 *Output: {Channel string, Message {}}*  
 
@@ -85,7 +85,7 @@ Sends a message to the specified channel
 *Output: standard message*  
 
 ### /subscribeTo
-Subscribes to recieve messages over the specified channel  
+Subscribes to receive messages over the specified channel  
 *Input: sessionid, channel*  
 *Output: standard message*  
 
@@ -107,7 +107,7 @@ Gets stat table informations
 ## Admin rights required actions
 
 ### /getDashboardInfos
-Gets informatinos to display on the administration dashboard  
+Gets informations to display on the administration dashboard  
 *Input: sessionid*  
 *Output: {UserCount int, OnlineUsers int, UpdateCount int}*  
 
