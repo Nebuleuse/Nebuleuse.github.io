@@ -20,6 +20,9 @@ a:hover {
 a[alt="Source on Github"], a[alt="Source on Github"]:hover {
 	border-bottom: none!important;
 }
+*[ng-click] {
+	cursor: pointer;
+}
 header {
 	padding: 12px 12px 2px 12px;
 	border-bottom: 1px solid rgba(218, 174, 159, 0.77);
@@ -128,7 +131,7 @@ footer {
 }
 .OverviewPanel, .OverviewInfo {
 	width: 400px;
-	height: 280px;
+	height: 308px;
 	display: inline-block;
 	background-color: #FAFBFD;
 	padding: 0px;
@@ -141,6 +144,7 @@ footer {
 	padding: 12px;
 	text-align: center;
 	font-size: 20px;
+	height: 147px;
 }
 .OverviewContent h2 {
 	font-size: 22px;	
@@ -149,6 +153,14 @@ footer {
 .OverviewTop {
 	height: 100px;
 	overflow: hidden;
+}
+.OverviewFooter {
+	height: 40px;
+	overflow: hidden;
+	background-color: #EDEDED;
+	font-size: 32px;
+line-height: 39px;
+color: #666;
 }
 .OverviewTop img {
 	position: relative;
