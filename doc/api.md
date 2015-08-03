@@ -121,6 +121,11 @@ Gets multiple users informations
 *Input: sessionid, infomask, page*  
 *Output: []User*  
 
+### /getOnlineUsersList
+Gets online users sessions informations  
+*Input: sessionid*  
+*Output: []{Userid int, LastAlive Time(string), SessionId string}*  
+
 ### /getAchievements
 Gets achievements list  
 *Input: sessionid*  
