@@ -11,8 +11,11 @@ This library is the official Nebuleuse C++ client. It allows developers to integ
 - Add and link library to your project
 
 ## Compatibility
-This library is currently Work in Progress. Support for VS2013 and GCC has been tested to compile but changes may break compilation.
-Compiler requirement is C++11 support for threads.
+This library is currently Work in Progress, following Nebuleuse backend changes. Support for VS2013 and GCC has been tested. Building requires C++11 support.
+
+## Unreal Engine 4 integration
+This client is compatible with Epic's Unreal Engine 4. You can follow [this guide](https://wiki.unrealengine.com/Linking_Static_Libraries_Using_The_Build_System) for the steps needed to integrate the library into your project. The file *UE4Sample.Build.cs* contains a sample of what your build configuration file should look like.  
+This project currently does not offer a wrapper for Blueprint usage so you will have to make your own.  
 
 ## Quick example
 This sample will show you most of Nebuleuse features used
