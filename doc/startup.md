@@ -15,3 +15,21 @@ Once the database is setup, it's time to run Nebuleuse's installation script. To
 The script will then ask you if you want to register a new user. If you want to be able to connect to the dashboard, please do so.
 ## Running
 Congratulations, you have finished installing and configuring Nebuleuse and can now run your own server by executing Nebuleuse. Players can now connect to the address configured and the administation dashboard is available at the address' `/admin/` folder.
+
+## Install using Docker
+
+There is also a Docker environment that let you run an instance of Nebuleuse without installing Go, NodeJS...
+
+It requires Docker and docker-compose. Then:
+
+``` bash
+git clone git@github.com:Nebuleuse/Nebuleuse.git
+cd Nebuleuse/
+
+make
+```
+
+Once all containers have started, you should access to:
+
+- Nebuleuse API: http://0.0.0.0:12080/
+- Nebuleuse Admin: http://0.0.0.0:12080/admin/ (credentials: `test` / `test`)
